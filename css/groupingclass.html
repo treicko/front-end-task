@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Title of the document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>CSS <span class="color_h1">Combinators</span></h1>
+    <p>A combinator is something that explains the relationship between the selectors.</p>
+    <p>A CSS selector can contain more than one simple selector. Between the simple selectors, we can include a combinator.</p>
+    <p>There are four different combinators in CSS3:</p>
+    <ul>
+      <li>descendant selector (space)</li>
+      <li>child selector (&gt;)</li>
+      <li>adjacent sibling selector (+)</li>
+      <li>general sibling selector (~)</li>
+    </ul>
+    <hr>
+    <h2>Descendant Selector</h2>
+    <p>The descendant selector matches all elements that are descendants of a specified element.
+    </p>
+    <span style="color:brown">
+div p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span>    yellow<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+    <hr>
+    <h2>Child Selector</h2>
+    <p>The child selector selects all elements that are the immediate children of a specified element.</p>
+    <p>The following example selects all &lt;p&gt; elements that are immediate children of a &lt;div&gt; element:
+    </p>
+    <span style="color:brown">
+div &gt; p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span>    yellow<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+
+    <hr>
+    <h2>Adjacent Sibling Selector</h2>
+    <p>The adjacent sibling selector selects all elements that are the adjacent siblings of a specified element.</p>
+    <p>Sibling elements must have the same parent element, and "adjacent" means "immediately following".</p>
+    <p>The following example selects all &lt;p&gt; elements that are placed immediately after &lt;div&gt; elements:</p>
+    <span style="color:brown">
+div + p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span>    yellow<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+    <hr>
+    <h2>General Sibling Selector</h2>
+    <p>The general sibling selector selects all elements that are siblings of a specified element.</p>
+    <p>The following example selects all &lt;p&gt; elements that are siblings of &lt;div&gt; elements:&nbsp;</p>
+    <span style="color:brown">
+div ~ p <span style="color:black">{</span><span style="color:red"><br>&nbsp;&nbsp;&nbsp; background-color<span style="color:mediumblue"><span style="color:black">:</span>    yellow<span style="color:black">;</span></span><br></span><span style="color:black">}</span> </span>
+
+
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Title of the document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1 class="small-mobile-overflow">
+      <wbr>Pseudo
+      <wbr>-elements</h1>
+    <p>A CSS <strong>pseudo-element</strong> is a keyword added to a selector that lets you style a specific part of the selected
+      element(s). For example,<code>::first-line</code> can be used to style the first line of a paragraph.</p>
+    <p>In contrast to pseudo-elements,<code>pseudo-classes</code>can be used to style an element based on its <em>state</em>.</p>
+    <h2 id="Syntax">Syntax</h2>
+    <pre class="syntaxbox">selector::pseudo-element {
+  property: value;
+}</pre>
+    <div class="note">
+      <p><strong>Note:</strong> As a rule, double colons (<code>::</code>) should be used instead of a single colon (<code>:</code>).
+        This distinguishes pseudo-classes from pseudo-elements. However, since this distinction was not present in older
+        versions of the W3C spec, most browsers support both syntaxes for the sake of compatibility. Note that <code>::selection</code>        must always start with double colons (<code>::</code>).</p>
+    </div>
+    <h2 id="Index_of_pseudo-elements">Index of pseudo-elements</h2>
+    <ul>
+      <li><code>::after</code></li>
+      <li><code>::before</code></li>
+      <li><code>::cue</code></li>
+      <li><code>::first-letter</code></li>
+      <li><code>::first-line</code></li>
+      <li><code>::selection</code></li>
+      <li><code>::backdrop</code>        <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></li>
+      <li><code>::placeholder</code>        <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></li>
+      <li><code>::marker</code>        <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></li>
+      <li><code>::spelling-error</code>        <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></li>
+      <li><code>::grammar-error</code>        <span title="This is an experimental API that should not be used in production code."><i class="icon-beaker"> </i></span></li>
+    </ul>
+  </div>
+</body>
+
+</html>
