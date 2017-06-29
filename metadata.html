@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Title of the document</title>
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>HTML <span class="color_h1">&lt;meta&gt;</span> Tag</h1>
+    <h2>Definition and Usage</h2>
+    <p>Metadata is data (information) about data. The
+      <meta> tag provides metadata about the HTML document. Metadata will not be displayed on the page, but will be machine parsable.
+      Meta elements are typically used to specify page description, keywords, author of the document, last modified, and
+      other metadata. The metadata can be used by browsers (how to display content or reload page), search engines (keywords),
+      or other web services. HTML5 introduced a method to let web designers take control over the viewport (the user's visible
+      area of a web page)
+      <meta>.</p>
+
+    <h2>Tips and Notes</h2>
+
+    <p><b>Note: </b>&lt;meta&gt; tags always go inside the &lt;head&gt; element.</p>
+    <p><b>Note:</b> Metadata is always passed as name/value pairs.</p>
+    <p><b>Note:</b> The content attribute MUST be defined if the name or the http-equiv attribute is defined. If none of these
+      are defined, the content attribute CANNOT be defined.</p>
+    <p><b>Setting The Viewport</b></p>
+    <p>HTML5 introduced a method to let web designers take control over the viewport, through the &lt;meta&gt; tag.</p>
+    <p>The viewport is the user's visible area of a web page. It varies with the device, and will be smaller on a mobile phone
+      than on a computer screen.</p>
+    <p>You should include the following &lt;meta&gt; viewport element in all your web pages:</p>
+
+    <div class="w3-code w3-border notranslate htmlHigh">
+      <div>
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="viewport"</span>        content<span style="color:mediumblue">="width=device-width, initial-scale=1.0"</span></span><span style="color:mediumblue">&gt;</span></span>
+      </div>
+    </div>
+
+    <p>A &lt;meta&gt; viewport element gives the browser instructions on how to control the page's dimensions and scaling.</p>
+    <p>The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending
+      on the device).</p>
+    <p>The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.</p>
+    <p>Here is an example of a web page <em>without</em> the viewport meta tag, and the same web page <em>with</em> the viewport
+      meta tag:</p>
+  </div>
+  <h2>Examples</h2>
+  <p><b>Example 1 - Define keywords for search engines:</b></p>
+  <div class="w3-code w3-border notranslate htmlHigh">
+    <div><span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="keywords"</span>      content<span style="color:mediumblue">="HTML, CSS, XML, XHTML, JavaScript"</span></span><span style="color:mediumblue">&gt;</span></span>
+    </div>
+  </div>
+  <p><b>Example 2 - Define a description of your web page:</b></p>
+  <div class="w3-code w3-border notranslate htmlHigh">
+    <div><span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="description"</span>      content<span style="color:mediumblue">="Free Web tutorials on HTML and CSS"</span></span><span style="color:mediumblue">&gt;</span></span>
+    </div>
+  </div>
+  <p><b>Example 3 - Define the author of a page:</b></p>
+  <div class="w3-code w3-border notranslate htmlHigh">
+    <div><span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="author"</span>      content<span style="color:mediumblue">="John Doe"</span></span><span style="color:mediumblue">&gt;</span></span>
+    </div>
+  </div>
+  <p><b>Example 4 - Refresh document every 30 seconds:</b></p>
+  <div class="w3-code w3-border notranslate htmlHigh">
+    <div><span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> http-equiv<span style="color:mediumblue">="refresh"</span>      content<span style="color:mediumblue">="30"</span></span><span style="color:mediumblue">&gt;</span></span>
+    </div>
+  </div>
+  <p><b>Example 5 - Setting the viewport to make your website look good on all devices:</b></p>
+  <div class="w3-code w3-border notranslate htmlHigh">
+    <div>
+      <span style="color:brown"><span style="color:mediumblue">&lt;</span>meta<span style="color:red"> name<span style="color:mediumblue">="viewport"</span>      content<span style="color:mediumblue">="width=device-width, initial-scale=1.0"</span></span><span style="color:mediumblue">&gt;</span></span>
+    </div>
+  </div>
+
+  <h2>Attributes</h2>
+  <table class="w3-table-all notranslate">
+    <tbody>
+      <tr>
+        <th style="width:17%">Attribute</th>
+        <th style="width:23%">Value</th>
+        <th style="width:60%">Description</th>
+      </tr>
+      <tr>
+        <td class="html5badge"><a href="att_meta_charset.asp">charset</a></td>
+        <td><i>character_set</i></td>
+        <td>Specifies the character encoding for the HTML document </td>
+      </tr>
+      <tr>
+        <td><a href="att_meta_content.asp">content</a></td>
+        <td><i>text</i></td>
+        <td>Gives the value associated with the http-equiv or name attribute</td>
+      </tr>
+      <tr>
+        <td><a href="att_meta_http_equiv.asp">http-equiv</a></td>
+        <td>content-type<br> default-style
+          <br> refresh
+        </td>
+        <td>Provides an HTTP header for the information/value of the content attribute</td>
+      </tr>
+      <tr>
+        <td><a href="att_meta_name.asp">name</a></td>
+        <td>application-name<br> author
+          <br> description
+          <br> generator
+          <i><br>
+      </i>keywords<br>viewport</td>
+        <td>Specifies a name for the metadata</td>
+      </tr>
+      <tr>
+        <td><a href="att_meta_scheme.asp">scheme</a></td>
+        <td><i>format/URI</i></td>
+        <td><span class="deprecated">Not supported in HTML5.</span><br>Specifies a scheme to be used to interpret the value of
+          the content attribute</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
