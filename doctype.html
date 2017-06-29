@@ -3,6 +3,12 @@
 
 <head>
   <title>Title of the document</title>
+  <style>
+    span.marked, span.deprecated {
+        color: #e80000;
+        background-color: transparent;
+    }
+  </style>
 </head>
 
 <body>
@@ -18,9 +24,974 @@
       the rules for the markup language, so that the browsers render the content correctly.</p>
     <p>HTML5 is not based on SGML, and therefore does not require a reference to a DTD.
     </p>
-    <p>Always add the &lt;!DOCTYPE&gt; declaration to your HTML documents, so that the browser knows what type of
-      document to expect.</p>
+    <p>Always add the &lt;!DOCTYPE&gt; declaration to your HTML documents, so that the browser knows what type of document to
+      expect.
+    </p>
   </div>
+  <div>
+    <h2>Common DOCTYPE Declarations on HTML5</h2>
+    <div style="border: 1px solid #ccc!important;padding: 8px 12px;">
+      <div>
+        <span style="color:brown"><span style="color:mediumblue">&lt;</span>!DOCTYPE<span style="color:red"> html</span>
+        <span style="color:mediumblue">&gt;</span>
+        </span>
+
+      </div>
+    </div>
+  </div>
+  <div>
+    <h2>HTML Elements - Valid DOCTYPES</h2>
+    <p>The table below lists all HTML elements, and shows what
+      <a href="">!DOCTYPE</a> each element appears in.</p>
+    <table>
+      <tbody>
+        <tr>
+          <th style="background-color:#ffffff;"></th>
+          <th style="background-color:#ffffff;"></th>
+          <th colspan="2" style="text-align:center;">HTML 4.01 / XHTML 1.0</th>
+          <th style="background-color:#ffffff;"></th>
+          <th style="background-color:#ffffff;"></th>
+        </tr>
+        <tr>
+          <th style="width:20%">Tag</th>
+          <th style="width:15%">HTML5</th>
+          <th style="width:15%">Transitional</th>
+          <th style="width:15%">Strict</th>
+          <th style="width:15%">Frameset</th>
+          <th style="width:20%">XHTML 1.1</th>
+        </tr>
+        <tr>
+          <td><a href="">&lt;a&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;abbr&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;acronym&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;address&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;applet&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="tag_area.asp">&lt;area&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;article&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;aside&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;audio&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;b&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;base&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;basefont&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;bdi&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;bdo&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;big&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;blockquote&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;body&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;br&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;button&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;canvas&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;caption&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;center&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;cite&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;code&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;col&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;colgroup&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;datalist&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;dd&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;del&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;details&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;dfn&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;dialog&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;dir&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;div&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;dl&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;dt&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;em&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;embed&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;fieldset&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;figcaption&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;figure&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;font&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;footer&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;form&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;frame&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;frameset&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;h1&gt; to &lt;h6&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;head&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;header&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;hr&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;html&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;i&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;iframe&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;img&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;input&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;ins&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;kbd&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;keygen&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;label&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;legend&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;li&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;link&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;main&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;map&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;mark&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;menu&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;menuitem&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;meta&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;meter&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;nav&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;noframes&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;noscript&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;object&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;ol&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;optgroup&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;option&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;output&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;p&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;param&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;pre&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;progress&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;q&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;rp&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;rt&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;ruby&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;s&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;samp&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;script&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;section&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;select&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;small&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;source&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;span&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;strike&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;strong&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;style&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;sub&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;summary&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;sup&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;table&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;tbody&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;td&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;textarea&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;tfoot&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;th&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;thead&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;time&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;title&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;tr&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;track&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;tt&gt;</a></td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;u&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;ul&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;var&gt;</a></td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+          <td>Yes</td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;video&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+        <tr>
+          <td><a href="">&lt;wbr&gt;</a></td>
+          <td>Yes</td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+          <td><span class="marked">No</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
 
 </body>
 
