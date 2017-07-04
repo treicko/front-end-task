@@ -4,19 +4,35 @@
 
 .nav {
     padding: 15px;
-    background-color: cadetblue;
+    background-color: #24292e;
 }
 
-.nav a {
-    text-decoration: none;
+.nav a.logo {
+    padding: 0px 0px;
 }
 
 .nav .icon-nav{
     display: none;
 }
 
-.item-left {
+.nav .item-nav {
+    color: #fff;
+    text-decoration: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 20px;
+}
+
+.nav .item-nav:hover, .nav .item-right:hover{
+    color: #586069;
+    text-decoration: none;
+}
+
+.item-right {
     float: right;
+    color: #fff;
+    padding-right: 20px;
+    text-decoration: none;
 }
 
 .icon-nav {
@@ -47,6 +63,8 @@
     .nav a.icon-nav {
         float: right;
         display: block;
+        padding: 0px;
+        padding: 0px;
     }
 
     .nav.responsive {
@@ -55,14 +73,17 @@
 
     .nav.responsive .icon-nav {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 15px;
+        top: 15px;
+        padding: 0px 0px;
     }
 
     .nav.responsive a {
         float: none;
         display: block;
         text-align: left;
+        padding-top: 9px;
+        padding-bottom: 9px;
     }
 
 
