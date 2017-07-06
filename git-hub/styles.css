@@ -2,9 +2,93 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0px;
+}
+
+.site-header {
+    background-color: #24292e;
+    padding: 16px 0px;
+    position: relative;
+    z-index: 3;
+    background-clip: padding-box;
+}
+
+.site-header::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.site-header::before {
+    display: table;
+    content: "";
+}
+
+
+.site-nav-container {
+    padding: 0px 16px;
+    margin-right: auto;
+    margin-left: auto;
+    /*width: auto;
+    max-width: 1012px;*/
+}
+
+.header-logo-invertocat {
+    float: left;
+    margin: 3px 20px 3px 0px;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.octicon {
+    display: inline-block;
+    vertical-align: text-bottom;
+    fill: currentColor;
+}
+
+.octicon-mark-github {
+    float: left;
+}
+
+.site-header-menu::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.site-header-menu::before {
+    display: table;
+    content: "";
+}
+
+.site-header-nav {
+    float: left;
+    margin-bottom: 0;
+}
+
+.icon-nav{
+    display: none;
+}
+
+.nav-item {
+    color: #fff;
+    padding: 9px 0px;
+    position: relative;
+    float: left;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+.nav-item:hover{
+    /*color: #586069;*/
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+}
+
 .nav {
     padding: 15px;
-    background-color: #24292e;
+    background-color: red;
 }
 
 .nav a.logo {
@@ -56,22 +140,23 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .nav a:not(:first-child) {
+    .site-header-nav a {
         display: none;
     }
 
-    .nav a.icon-nav {
+    .icon-nav {
         float: right;
         display: block;
         padding: 0px;
-        padding: 0px;
+        color: #fff;
     }
 
-    .nav.responsive {
+    .site-header.responsive {
         position: relative;
     }
 
-    .nav.responsive .icon-nav {
+    /*.nav.responsive .icon-nav {
+        color: #fff;
         position: absolute;
         right: 15px;
         top: 15px;
@@ -84,7 +169,7 @@
         text-align: left;
         padding-top: 9px;
         padding-bottom: 9px;
-    }
+    }*/
 
 
 }
