@@ -191,24 +191,6 @@ body {
     .row.section {
         margin: 0px 0px;
     }
-
-    /*.nav.responsive .icon-nav {
-        color: #fff;
-        position: absolute;
-        right: 15px;
-        top: 15px;
-        padding: 0px 0px;
-    }
-
-    .nav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-        padding-top: 9px;
-        padding-bottom: 9px;
-    }*/
-
-
 }
 
 @media only screen and (min-width: 600px) {
