@@ -1,5 +1,6 @@
 function myFunction() {
   var x = document.getElementById("idSiteHeaderNav");
+  console.log('leooooo: ', x);
   if (x.className === "site-header-nav") {
     x.className += " responsive";
   } else {
